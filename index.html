@@ -90,6 +90,15 @@
             background-color: rgba(255, 255, 255, 0.3);
         }
 
+        .form-control {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-left: 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
         .hero-content {
             max-width: 800px;
             margin: 0 auto;
@@ -198,8 +207,8 @@
                 <li><a href="#">Help</a></li>
             </ul>
             <div class="navbar-actions">
-                <button class="btn btn-signup">Sign up</button>
-                <button class="btn btn-login">Log in</button>
+                <input type="email" placeholder="Enter your email" class="form-control">
+                <button class="btn btn-login">Sign In</button>
             </div>
         </nav>
 
