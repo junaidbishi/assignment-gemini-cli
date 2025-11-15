@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva-like Hero Section</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #46325ce0 0%, #2575fc 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 80px;
+        }
+
+        .navbar-brand a {
+            color: white;
+            font-family: 'Pacifico', cursive;
+            font-size: 32px;
+            text-decoration: none;
+        }
+
+        .navbar-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar-links li {
+            margin: 0 20px;
+        }
+
+        .navbar-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: opacity 0.3s ease;
+        }
+
+        .navbar-links a:hover {
+            opacity: 0.9;
+        }
+
+        .navbar-actions .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            margin-left: 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn-signup {
+            background-color: white;
+            color: #6a11cb;
+        }
+
+        .btn-signup:hover {
+            background-color: #f0f0f0;
+        }
+
+        .btn-login {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .btn-login:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-content h1 {
+            font-size: 72px;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.3;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            margin: 20px 0 40px;
+            opacity: 0.9;
+        }
+
+        .hero-cta .btn {
+            padding: 18px 36px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .hero-cta .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-start-designing {
+            background-color: white;
+            color: #6b11cb96;
+        }
+
+        .btn-explore {
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+        
+        .decorative-shapes {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            pointer-events: none;
+        }
+
+        .shape {
+            position: absolute;
+            bottom: -10px;
+            background-color: rgba(255, 255, 255, 0.20);
+            border-radius: 15px;
+        }
+
+        .shape-1 {
+            left: 15%;
+            width: 80px;
+            height: 80px;
+            transform: rotate(45deg);
+            background-color: #ff4f81;
+        }
+
+        .shape-2 {
+            left: 25%;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #a3f3cce8;
+        }
+
+        .shape-3 {
+            right: 20%;
+            width: 100px;
+            height: 60px;
+            transform: skewX(-20deg);
+            background-color: #ffd9008f;
+        }
+        
+        .shape-4 {
+            right: 10%;
+            width: 70px;
+            height: 70px;
+            background-color: #9264c0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="hero-section">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#">Canva</a>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Plans</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="btn btn-signup">Sign up</button>
+                <button class="btn btn-login">Log in</button>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <h1>A new era of imagination using gemini cli</h1>
+            <p>Discover a whole new world of skills and tools designed to put your imagination to work.</p>
+            <div class="hero-cta">
+                <button class="btn btn-start-designing">Start designing for free</button>
+                <button class="btn btn-explore">Explore our launches</button>
+            </div>
+        </div>
+        
+        <div class="decorative-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+</body>
+</html>
